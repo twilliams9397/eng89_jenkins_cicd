@@ -18,7 +18,7 @@
 ![trigger build](images/trigger_pipeline.png)
 - for this, the second build has the same configuration but diffetrent shell commands
 ![second build](images/second_shell.png)
-- now when running the first buid it will display a message saying the next build has been triggered, which can then be checked/viewed
+- now when running the first build it will display a message saying the next build has been triggered, which can then be checked/viewed
 ![first build output](images/first_output.png)
 ![second build output](images/second_output.png)
 
