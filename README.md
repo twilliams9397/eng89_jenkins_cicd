@@ -23,7 +23,7 @@
 ![second build output](images/second_output.png)
 
 ## Pipeline for automated testing
-- setup a build in the same way as aove but with the below options selected as well:
+- setup a build in the same way as above but with the below options selected as well:
 - https of github repo containing the code
 ![git https](images/pipeline_https_github.png)
 - restrict where it can be run
@@ -33,6 +33,7 @@
 - build environment, ensure correct plugins are checked
 ![npm env plugin](images/npm_env.png)
 - build trigger
+
 ![build trigger](images/build_trigger.png)
 - shell commands
 ```linux
