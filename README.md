@@ -28,7 +28,7 @@
 ![git https](images/pipeline_https_github.png)
 - restrict where it can be run
 ![run area restrict](images/run_node.png)
-- source code management, SSH of repo and jenkins key - priv of pair that is in repo, main branch
+- source code management, SSH of repo and jenkins key - priv of pair that is in repo, ensure it has read and write access
 ![jenkins ssh key](images/jenkins_ssh_key.png)
 - build environment, ensure correct plugins are checked
 ![npm env plugin](images/npm_env.png)
@@ -43,6 +43,7 @@ npm test
 ```
 
 ## Github webhook and merge pipeline
+- setup webhook in github repo using jenkins ip/github-webhook/ and select send me everything
 - change branch for above build to dev in source code management
 ![build to dev branch](images/dev_branch.png)
 - after above build, trigger next build to merge dev branch into main branch
