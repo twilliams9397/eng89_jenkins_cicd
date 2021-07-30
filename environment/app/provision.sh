@@ -21,7 +21,7 @@ sudo npm install pm2 -g
 sudo apt-get install nginx -y
 
 # remove the old file and add our one
-sudo rm /etc/nginx/sites-available/default
+sudo rm home/ubuntu/etc/nginx/sites-available/default
 sudo echo "server{
         listen 80;
         server_name _;
@@ -33,7 +33,7 @@ sudo echo "server{
           proxy_set_header Host $host;
           proxy_cache_bypass $http_upgrade;
         }
-}" >> /etc/nginx/sites-available/default
+}" >> home/ubuntu/etc/nginx/sites-available/default
 
 # finally, restart the nginx service so the new config takes hold
 sudo service nginx restart
